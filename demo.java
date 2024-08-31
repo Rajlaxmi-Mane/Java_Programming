@@ -1,1 +1,5 @@
-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
+class demo{
+    public static void main(String [ ] args){
+        System.out.println("hello its my first push to git");
+    }
+}
