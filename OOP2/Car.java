@@ -1,0 +1,23 @@
+class Car 
+{
+	static String showroom;
+	String brand;
+	String col;
+	double price;
+	static int id=101;
+
+	{
+		id++;
+	}
+
+	public void details()
+	{
+		
+		System.out.println("SHOWROOM : "+showroom);
+		System.out.println("id :"+id);
+		System.out.println("brand :"+brand);
+		System.out.println("col :"+col);
+		System.out.println("Price :"+price);
+		System.out.println("=================================================");
+	}
+}

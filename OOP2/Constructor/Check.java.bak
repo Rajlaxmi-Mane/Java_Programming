@@ -1,0 +1,22 @@
+class Check
+{
+	int a;
+	Check(int b){
+		a=b;
+	}
+	{
+		
+		a=20;
+	}
+
+}
+
+
+class CheckDriv 
+{
+	public static void main(String[] args) 
+	{
+		Check c=new Check(10);
+		System.out.println(a);
+	}
+}
