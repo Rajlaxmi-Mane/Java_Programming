@@ -1,0 +1,76 @@
+import java.util.*;
+class Calculator {
+	public static void main(String[] args) {
+		String ch;
+		Scanner sc=new Scanner(System.in);
+         do{
+		System.out.println();
+		System.out.println("===================================================");
+		System.out.println();
+		System.out.println(".......WHICH OPERATON YOU WANT TO PERFORM.......");
+		System.out.println();
+		System.out.println("===================================================");
+		System.out.println("   ||                                  ||");
+		System.out.println("   ||     PRESS 1 FOR ADDITION         ||");
+		System.out.println("   ||     PRESS 2 FOR SUBSTRACTION     ||");
+		System.out.println("   ||     PRESS 3 FOR MULTIPLICATION   ||");
+		System.out.println("   ||     PRESS 4 FOR DIVISION         ||");
+		System.out.println("   ||                                  ||");
+		System.out.println("===================================================");
+		int n=sc.nextInt();
+		switch(n){
+			case 1: 
+			        System.out.println("ENTER FIRST VALUE : ");
+		            double a=sc.nextDouble();
+		            System.out.println("ENTER SECOND VALUE : ");
+		            double b=sc.nextDouble();
+				    add(a,b);
+			        break;
+            case 2: 
+				    System.out.println("ENTER FIRST VALUE : ");
+		            double aa=sc.nextDouble();
+		            System.out.println("ENTER SECOND VALUE : ");
+		            double bb=sc.nextDouble();
+				    sub(aa,bb);
+			        break;
+			case 3: 
+				    System.out.println("ENTER FIRST VALUE : ");
+		            double a1=sc.nextDouble();
+		            System.out.println("ENTER SECOND VALUE : ");
+		            double b1=sc.nextDouble();
+				    mul(a1,b1);
+			        break;
+			case 4: 
+				    System.out.println("ENTER FIRST VALUE : ");
+		            double a2=sc.nextDouble();
+		            System.out.println("ENTER SECOND VALUE : ");
+		            double b2=sc.nextDouble();
+				    div(a2,b2);
+			        break;
+            default:
+				    System.out.println("ENTER VALID NUMBER ");
+		}
+		System.out.println();
+		System.out.println("===============================================================");
+		System.out.println("IF YOU WANT TO PERFORM OTHER OPERATION THEN ENTER Y OTHERWISE N ");
+        ch= sc.next();
+		}
+        while (ch.equals("Y")|| ch.equals("y"));
+	} 
+	public static void add(double a, double b){
+		System.out.println();
+		System.out.println("ADDITION = "+(a+b));
+     }
+    public static void sub(double a, double b){
+		System.out.println();
+		System.out.println("SUBSTRACTION = "+(a-b));
+	}
+	public static void mul(double a, double b){
+		System.out.println();
+		System.out.println("MULTIPLICATION = "+(a*b));
+     }
+    public static void div(double a, double b){
+		System.out.println();
+		System.out.println("DIVISION = "+(a/b));
+     }
+}
