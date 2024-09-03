@@ -1,0 +1,33 @@
+import java.util.*;
+class StrongOrWeakNum 
+{
+	public static void main(String[] args) 
+	{ 
+		//if the sum of factorial of each digit is equal to that number then it is strong number 
+        int sum=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter number");
+		int num = s.nextInt();
+		int temp=num;
+		while(num!=0) {
+		int fact=1;
+		int rem=num%10;
+		for (int i=1;i<=rem;i++ )
+		{
+			fact=fact*i;
+            
+		}
+		sum=sum+fact;
+		num=num/10;
+		}
+		if (temp==sum)
+		{
+			System.out.println("no is  a strong number");
+			System.out.println(sum);
+		}
+		else{
+			System.out.println("no is weak number");
+		}
+		
+	}
+}
